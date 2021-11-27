@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>species</title>
+</head>
+<body>
+   <h1>
+
+    Iris Species Prediction
+
+   </h1> 
+
+   <form method="POST" action="/iris_project">
+    <label>SepalLengthCm</label>
+    <input type="text" name="SepalLengthCm">
+    <br>
+    <br>
+
+
+    <label>SepalWidthCm</label>
+    <input type="text" name="SepalWidthCm">
+    <br>
+    <br>
+
+    <label>PetalLengthCm</label>
+    <input type="text" name="PetalLengthCm">
+    <br>
+    <br>
+
+    <label>PetalWidthCm</label>
+    <input type="text" name="PetalWidthCm">
+    <br>
+    <br>
+
+    <input type="submit" value="PREDICT">
+
+    {% if prediction %}
+
+    <h3> {{prediction}} </h3>
+
+    {% endif %}
+</form>
+</body>
+</html>
